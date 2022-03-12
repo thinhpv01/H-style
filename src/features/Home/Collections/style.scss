@@ -1,0 +1,43 @@
+.collection{
+    padding: 5rem 0;
+    max-width: 1100px;
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    &__item{
+        height: 550px;
+        box-shadow: 0 7px 30px -10px rgba(150, 170, 100, .5);
+        overflow: hidden;
+        border-radius: .5rem;
+        position: relative;
+        &:hover .collection__img{
+            transform: scale(1.1);
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 1s ease;
+    }
+    &__title{
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.5rem;
+        color: #f1f1f1;
+    }
+    & .overlay{
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.3);
+    }
+}

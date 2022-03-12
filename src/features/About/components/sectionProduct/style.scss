@@ -1,0 +1,115 @@
+.sectionProduct {
+    height: 90vh;
+    background-color: var(--yellow);
+    position: relative;
+
+    &__container {
+        max-width: 1200px;
+        width: calc(100% - 3rem);
+        margin: 0 auto;
+        height: 100%;
+        display: grid;
+        padding: 6rem 2rem;
+        grid-template-columns: 1fr max-content;
+    }
+    &__slogan {
+        font-size: 8.5rem;
+        font-weight: 500;
+        font-family: var(--mainFont);
+        writing-mode: vertical-rl;
+        color: rgba(236, 236, 236, 0.5);
+        z-index: 1;
+    }
+    &__content {
+        position: relative;
+    }
+    &__title {
+        font-size: 1.2rem;
+        background: var(--light-black);
+        position: absolute;
+        top: 0;
+        right: 8rem;
+        color: #e2e1e1;
+        padding: 0.3rem 2rem;
+    }
+    &__background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 85%;
+        height: 90%;
+        transform: translate(-50%, -45%);
+        background: var(--orange);
+        z-index: 0;
+    }
+
+    &__text {
+        position: absolute;
+        font-size: 0.9rem;
+        font-weight: 500;
+        top: 1rem;
+        right: 1rem;
+        text-align: right;
+        width: 400px;
+        color: #333;
+        padding: 1.5rem;
+        & > * {
+            margin-bottom: 1rem;
+        }
+        & ul {
+            list-style-type: initial;
+            margin-left: 3rem;
+        }
+    }
+    &__skew {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--yellow);
+        transform: skewY(-4deg);
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        & div {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: #fff;
+            padding: 0.5rem;
+            & span {
+                margin: 0.5rem;
+                font-weight: 500;
+            }
+        }
+    }
+    &__clothing {
+        width: 250px;
+        & img {
+            height: 420px;
+            object-fit: cover;
+        }
+    }
+    &__glasses {
+        width: 250px;
+        left: 290px;
+    }
+    &__jewelries {
+        width: 500px;
+        left: 290px;
+        bottom: -470px;
+        flex-direction: row !important;
+        & img {
+            width: 450px;
+        }
+        & span {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.shop {
+  padding: 5rem 0;
+  max-width: 1200px;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  &__container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 3rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}

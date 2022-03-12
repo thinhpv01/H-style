@@ -1,0 +1,30 @@
+.contactHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  margin: auto;
+  height: 91vh;
+  justify-content: space-between;
+  align-items: center;
+  & > div:first-child {
+    width: 40%;
+  }
+  & > div:last-child {
+    width: 50%;
+  }
+  &__img img {
+    width: 100%;
+  }
+  &__left {
+    color: var(--dark);
+  }
+  &__title {
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  &__content {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}

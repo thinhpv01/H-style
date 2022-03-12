@@ -1,0 +1,69 @@
+.nav {
+    background-color: var(--light-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 90px;
+}
+
+.nav__menu {
+    width: 40%;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__icons {
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav__icons__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__icons__item > svg {
+    font-size: 1.2rem;
+    color: var(--light-gray);
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.cartIcon {
+    position: relative;
+}
+
+.quantity {
+    position: absolute;
+    top: -14px;
+    right: -10px;
+    color: #555;
+    cursor: pointer;
+    font-size: 1.1rem;
+    background: yellow;
+    border-radius: 50%;
+    padding: 0 0.3rem;
+}
+
+.nav__item a {
+    font-size: 1.1rem;
+    color: var(--light-gray);
+}
+
+.nav__item a.active {
+    color: var(--orange);
+}
+
+.brandName a {
+    font-size: 2rem;
+    font-family: 'Lobster';
+    color: var(--orange);
+}

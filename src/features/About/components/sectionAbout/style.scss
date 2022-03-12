@@ -1,0 +1,81 @@
+.sectionAbout {
+    height: 90vh;
+    background-color: var(--orange);
+    position: relative;
+    &__container {
+        max-width: 1200px;
+        width: calc(100% - 3rem);
+        margin: 0 auto;
+        height: 100%;
+        display: grid;
+        padding: 6rem 2rem;
+        grid-template-columns: max-content 1fr;
+    }
+    &__slogan {
+        font-size: 8rem;
+        font-weight: 500;
+        font-family: var(--mainFont);
+        writing-mode: vertical-rl;
+        text-align: right;
+        transform: rotate(180deg);
+        color: rgba(236, 236, 236, 0.5);
+    }
+    &__content {
+        position: relative;
+    }
+    &__title {
+        font-size: 1.2rem;
+        background: var(--light-black);
+        position: absolute;
+        top: 0;
+        left: 8rem;
+        color: #e2e1e1;
+        padding: 0.3rem 2rem;
+    }
+    &__background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 85%;
+        height: 82%;
+        transform: translate(-50%, -50%);
+        background: var(--yellow);
+        z-index: 0;
+    }
+    &__img {
+        width: 380px;
+        position: absolute;
+        top: 0;
+        right: 4rem;
+        object-fit: cover;
+        border: 10px solid #f1f1f1;
+    }
+    &__text {
+        position: absolute;
+        font-size: 0.9rem;
+        font-weight: 400;
+        top: 6rem;
+        left: 0;
+        width: 400px;
+        background: #fff;
+        color: #333;
+        padding: 1.5rem;
+        & > * {
+            margin-bottom: 1rem;
+        }
+        & ul {
+            list-style-type: initial;
+            margin-left: 3rem;
+        }
+    }
+    &__skew {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: var(--orange);
+        transform: skewY(4deg);
+    }
+}

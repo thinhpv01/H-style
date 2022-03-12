@@ -1,0 +1,55 @@
+.glasses{
+    padding: 9rem 0 11rem;
+    max-width: 1400px;
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__left{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        &::before{
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 80%;
+            background: rgb(61, 60, 60);
+            z-index: -1;
+        }
+        & img{
+            width: 40%;
+            height: 100%;
+            object-fit: cover;
+            align-self: center;
+        }
+    }
+    &__right{
+        text-align: right;
+    }
+    &__link{
+        margin-bottom: 10rem;
+        & > a {
+            color: #f1f1f1;
+            background: var(--light-black);
+            font-size: 1.5rem;
+            padding: .5rem 1.5rem;
+            display: inline-block;
+            margin-bottom: .5rem;
+        }
+    }
+    &__title{
+        font-size: 1.8rem;
+    }
+    &__subtitle{
+        font-size: 3.5rem;
+        color: #f1f1f1;
+        padding: .2rem .5rem;
+        background: var(--light-black);
+    }
+}

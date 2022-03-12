@@ -1,0 +1,71 @@
+.sideBar {
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    background-color: var(--light-black);
+    text-align: center;
+    color: #f1f1f1;
+    line-height: 2.5rem;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+  }
+  &__box {
+    margin-bottom: 3rem;
+    &__title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+    &__btn {
+      margin-left: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      & button {
+        color: #444;
+        background: rgb(211, 210, 210);
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        transition: all 0.4s;
+        &.active {
+          background: var(--light-black);
+          color: #f1f1f1;
+        }
+      }
+    }
+    &__input {
+      & form {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+      }
+      & input {
+        width: 90px;
+        outline: 0;
+        padding: 0.2rem;
+      }
+      & span {
+        margin: 0 0.5rem;
+      }
+      & button {
+        color: #f1f1f1;
+        background: var(--light-black);
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.aboutHeader {
+  padding: 10rem 0;
+  max-width: 1200px;
+  width: calc(100% - 5rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  &__left {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  &__title {
+    writing-mode: vertical-lr;
+    font-size: 5.5rem;
+    font-weight: 500;
+    transform: rotate(180deg);
+    font-family: "Lobster";
+    color: var(--light-black);
+  }
+  &__arrow {
+    transform: translateX(-45%);
+  }
+  &__right {
+    height: 80%;
+    position: relative;
+    & img {
+      position: absolute;
+    }
+  }
+  &__img {
+    &__left {
+      width: 45%;
+      top: 0;
+      left: 0;
+    }
+    &__center {
+      z-index: 10;
+      border: 10px solid #f1f1f1;
+      width: 30%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__right {
+      width: 45%;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
